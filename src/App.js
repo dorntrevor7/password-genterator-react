@@ -14,10 +14,24 @@ const Questions = () => {
 function App() {
   let password = "";
   const generatePassword = () => {
-    const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    const lowerCase = "abcdefghijklmnopqrstuvwxyz";
-    const specialCase = "!@#$&";
+    const upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lowerCaseLetters = "abcdefghijklmnopqrstuvwxyz";
+    const specialCaseLetters = "!@#$&";
     const numbers = "1234567890";
+    const lowerCaseRandomizer = Math.floor(Math.random() * lowerCase.length);
+    const upperCaseRandomizer = Math.floor(
+      Math.random() * upperCaseLetters.length
+    );
+    const specialCaseRandomizer = Math.floor(
+      Math.random() * specialCaseLetters.length
+    );
+    const numberRandomizor = Math.floor(Math.random() * numbers.length);
+    for (var i = 0; i < length; i++) {
+      password += upperCaseLetters.charAt(
+        Math.floor(Math.random() * upperCaseLetters, length)
+      );
+    }
+    return password;
   };
   return (
     <div className="App">
