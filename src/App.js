@@ -4,6 +4,13 @@ import Password from "./Components/Password.js";
 import "./App.css";
 
 function App() {
+  let password = "";
+  const generatePassword = () => {
+    const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+    const specialCase = "!@#$";
+    const numbers = "1234567890";
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -13,13 +20,10 @@ function App() {
               <Heading className="Heading" />
             </Row>
             <Row>
-              <Password className="Password" />
+              <Password className="Password" password={password} />
             </Row>
             <Row>
-              <Button
-                variant="outline-success"
-                onClick={() => console.log("Clicked")}
-              >
+              <Button variant="outline-success" onClick={generatePassword}>
                 Generate Password
               </Button>
               {}

@@ -1,3 +1,9 @@
+# Welcome to the Password Generator
+
+## This generates a password for you with just a click of a button.
+
+### The password contains number, letters, lowercase, and upper case letters.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
