@@ -16,7 +16,13 @@ function App() {
               <Password className="Password" />
             </Row>
             <Row>
-              <Button variant="outline-success">Generate Password</Button>{" "}
+              <Button
+                variant="outline-success"
+                onClick={() => console.log("Clicked")}
+              >
+                Generate Password
+              </Button>
+              {}
             </Row>
           </Col>
         </Container>
